@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Radha ✨</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<div class="stars"></div>
+
+<div class="top-controls">
+<button onclick="toggleTheme()">🌙</button>
+<button onclick="toggleMusic()">🎵</button>
+</div>
+
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+<h1>Happy Birthday<br>Radha Jha 🎂</h1>
+<p class="subtitle">A celebration of a wonderful friendship ✨</p>
+<button onclick="scrollToContent()">Open Your Surprise 🎁</button>
+</section>
+
+<section id="content" class="glass">
+<h2>💖 A Message For You</h2>
+<p id="typewriter"></p>
+</section>
+
+<section class="glass">
+<h2>🌸 Why You're Special</h2>
+<div class="cards">
+<div class="mini">✨ Kind & Caring</div>
+<div class="mini">🌟 Positive Energy</div>
+<div class="mini">😊 Always Encouraging</div>
+<div class="mini">💝 A Great Friend</div>
+</div>
+</section>
+
+<section class="glass">
+<h2>🎁 Friendship Wishes Jar</h2>
+<button onclick="newWish()">Get A Wish</button>
+<p id="wish"></p>
+</section>
+
+<section class="glass">
+<h2>🎂 Birthday Cake</h2>
+<div class="candles">
+<span onclick="blowCandle(this)">🕯️</span>
+<span onclick="blowCandle(this)">🕯️</span>
+<span onclick="blowCandle(this)">🕯️</span>
+</div>
+<div class="cake">🎂</div>
+</section>
+
+<section class="glass">
+<h2>🎉 Final Surprise</h2>
+<div id="gift" onclick="openGift()">🎁</div>
+<p id="giftText"></p>
+</section>
+
+
+
+<section class="glass">
+<button id="openLetterBtn" onclick="document.getElementById('letterModal').style.display='flex'">
+💌 Read My Letter
+</button>
+</section>
+
+
+<div id="letterModal" class="modal">
+    <div class="modal-box">
+        <button class="close-btn" onclick="document.getElementById('letterModal').style.display='none'">✖</button>
+        <div class="modal-content">
+            <h2>💌 Letter To Radha</h2>
+            <p>
+              Dear Radha(qtpie),<br><br>
+Happy Birthday! 🎉
+
+Thank you for being such an amazing friend. Your kindness, positivity, and support have left a mark on my life in ways I can never fully express. From the funny memory of you blocking me for talking to Arrohi Dii 😂 to all the countless conversations we've shared, every moment has become a part of memories that I truly cherish.
+
+What means the most to me, though, is how you stood by me during some of the lowest phases of my life. Your sweet voice notes gave me comfort when I felt lost, and your words of encouragement helped me keep moving forward when everything seemed difficult. Throughout my graduation journey, you were one of the people who constantly motivated me to believe that I could achieve more than I thought I was capable of. Even if we weren't always physically present in each other's lives, your support was always there, and I'll always be grateful for that.
+
+I may not have many memories with you, but the ones I do have are precious and unforgettable. They remind me of a genuinely wonderful person who brought light, laughter, and encouragement into my life when I needed it most.
+
+On your special day, I just want to wish you endless happiness, success, love, and countless beautiful moments. May all your dreams come true, and may life reward you with everything your heart desires. Keep smiling, keep shining, and never stop being the incredible person that you are. You deserve all the good things coming your way.
+
+Happy Birthday once again! ❤️🎂✨
+            <br><br>
+            Happy Birthday once again! ❤️🎂✨
+            <br><br>
+            Your Friend spaartzz(Arjun chourasiya) 
+            </p>
+        </div>
+    </div>
+</div>
+
+<section class="glass">
+<h2>📸 Memories Gallery</h2>
+<div class="gallery">
+<div class="card"><img src="images/photo1.jpg"><p>🌸 personal favorite</p></div>
+<div class="card"><img src="images/photo2.jpg"><p>✨ best one </p></div>
+<div class="card"><img src="images/photo3.jpg"><p>❤️ cute one</p></div>
+<div class="card"><img src="images/photo4.jpg"><p>bauni upadhay</p></div>
+</div>
+</section>
+
+<section class="glass">
+<h2>🎥 Special Memory Video</h2>
+<video controls class="memory-video">
+<source src="videos/memory.mp4" type="video/mp4">
+</video>
+</section>
+
+<section class="glass">
+<h2>🌸 Our Journey</h2>
+<p>2023 - First Conversation(through that comment section)</p>
+<p>2024 - Shared Memories</p>
+<p>2025 - this year was quite unstable because of some personal issues</p>
+<p>2026 - Birthday Celebration 🎂</p>
+</section>
+
+
+<footer>Made with ❤️ for Radha Jha</footer>
+<script src="script.js"></script>
+</body>
+</html>
